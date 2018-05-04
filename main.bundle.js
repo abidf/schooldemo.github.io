@@ -78,7 +78,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\n    "
+module.exports = "<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -146,6 +146,9 @@ var AppComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_ngx_pagination__ = __webpack_require__("../../../../ngx-pagination/dist/ngx-pagination.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__component_school_detail_school_detail_component__ = __webpack_require__("../../../../../src/app/component/school-detail/school-detail.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__component_school_school_component__ = __webpack_require__("../../../../../src/app/component/school/school.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__component_navbar_navbar_component__ = __webpack_require__("../../../../../src/app/component/navbar/navbar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__component_footer_footer_component__ = __webpack_require__("../../../../../src/app/component/footer/footer.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__component_maps_maps_component__ = __webpack_require__("../../../../../src/app/component/maps/maps.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -168,6 +171,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
+
+
 console.log(__WEBPACK_IMPORTED_MODULE_8__environments_environment__["a" /* environment */]);
 var AppModule = (function () {
     function AppModule() {
@@ -177,7 +183,10 @@ var AppModule = (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_9__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_12__component_school_detail_school_detail_component__["a" /* SchoolDetailComponent */],
-                __WEBPACK_IMPORTED_MODULE_13__component_school_school_component__["a" /* SchoolComponent */]
+                __WEBPACK_IMPORTED_MODULE_13__component_school_school_component__["a" /* SchoolComponent */],
+                __WEBPACK_IMPORTED_MODULE_14__component_navbar_navbar_component__["a" /* NavbarComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__component_footer_footer_component__["a" /* FooterComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__component_maps_maps_component__["a" /* MapsComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -197,6 +206,189 @@ var AppModule = (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/component/footer/footer.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n  <!--Footer-->\n  <footer class=\"page-footer blue pt-4 mt-4\">\n\n    <!--Footer Links-->\n    <div class=\"container-fluid text-center text-md-left\">\n        <div class=\"row\">\n\n            <!--First column-->\n            <div class=\"col-md-4\">\n                <h5 class=\"title\">Mulazam</h5>\n                <p>We provide access to helpers to your household needs.\n                  We have <br> extensive list of very profession individulas, with previous work <br> references. <br> We provide service to get background checks done and registration <br> of the candidate to the nearest police station.</p>\n            </div>\n            <!--/.First column-->\n            <div class=\"col-md-4\">Want to receive exclusive hotel offers? Subscribe to our newsletter!</div>\n            <!--Second column-->\n            <div class=\"col-md-4\">\n                <h5 class=\"title\">!</h5>\n                <ul class=\"list-unstyled\">\n                    <li><a href=\"#\">Terms and Conditions</a></li>\n                    <li><a href=\"#\">Legal Information</a></li>\n                    <li><a href=\"#\">Privacy Policy</a></li>\n                    <li><a href=\"#\">Site Map</a></li>\n                    <li><a href=\"#\">Cookie policy</a></li>\n                </ul>\n            </div>\n            <!--/.Second column-->\n        </div>\n    </div>\n    <!--/.Footer Links-->\n\n    <!--Copyright-->\n    <div class=\"footer-copyright text-center py-3\">\n        <div class=\"container-fluid\">\n            © 2018 Copyright: <a href=\"https://www.mulazam.com\"> mulazam.com </a>\n        </div>\n    </div>\n    <!--/.Copyright-->\n</footer>\n<!--/.Footer-->\n<!--\nFAQs-->"
+
+/***/ }),
+
+/***/ "../../../../../src/app/component/footer/footer.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/component/footer/footer.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FooterComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-footer',
+            template: __webpack_require__("../../../../../src/app/component/footer/footer.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/component/footer/footer.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FooterComponent);
+    return FooterComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/component/maps/maps.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  maps works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/component/maps/maps.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/component/maps/maps.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapsComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MapsComponent = (function () {
+    function MapsComponent() {
+    }
+    MapsComponent.prototype.ngOnInit = function () {
+    };
+    MapsComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-maps',
+            template: __webpack_require__("../../../../../src/app/component/maps/maps.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/component/maps/maps.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MapsComponent);
+    return MapsComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/component/navbar/navbar.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "\n<mdb-navbar SideClass=\"navbar navbar-expand-lg navbar-dark indigo\">\n  <logo>\n      <a class=\"navbar-brand\" href=\"\">Navbar</a>\n  </logo>\n  <links>\n      <ul class=\"navbar-nav\">\n          <li class=\"nav-item active\">\n              <a class=\"nav-link waves-light\" mdbWavesEffect>Home <span class=\"sr-only\">(current)</span></a>\n          </li>\n          <li class=\"nav-item\">\n              <a class=\"nav-link waves-light\" mdbWavesEffect>Features</a>\n          </li>\n          <li class=\"nav-item\">\n              <a class=\"nav-link waves-light\" mdbWavesEffect>Pricing</a>\n          </li>\n          <li class=\"nav-item dropdown btn-group\" dropdown>\n              <a dropdownToggle type=\"button\" class=\"nav-link dropdown-toggle waves-light\" mdbWavesEffect>\n              Basic dropdown<span class=\"caret\"></span></a>\n              <div *dropdownMenu class=\"dropdown-menu dropdown dropdown-primary\" role=\"menu\">\n                  <a class=\"dropdown-item waves-light\" href=\"#\" mdbWavesEffect>Action</a>\n                  <a class=\"dropdown-item waves-light\" href=\"#\" mdbWavesEffect>Another action</a>\n                  <a class=\"dropdown-item waves-light\" href=\"#\" mdbWavesEffect>Something else here</a>\n                  <div class=\"divider dropdown-divider\"></div>\n                  <a class=\"dropdown-item waves-light\" href=\"#\" mdbWavesEffect>Separated link</a>\n              </div>\n          </li>\n      </ul>\n  </links>\n</mdb-navbar>\n          "
+
+/***/ }),
+
+/***/ "../../../../../src/app/component/navbar/navbar.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/component/navbar/navbar.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavbarComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var NavbarComponent = (function () {
+    function NavbarComponent() {
+    }
+    NavbarComponent.prototype.ngOnInit = function () {
+    };
+    NavbarComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-navbar',
+            template: __webpack_require__("../../../../../src/app/component/navbar/navbar.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/component/navbar/navbar.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], NavbarComponent);
+    return NavbarComponent;
 }());
 
 
@@ -298,7 +490,7 @@ var SchoolDetailComponent = (function () {
 /***/ "../../../../../src/app/component/school/school.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"text-center\">\r\n        <h2 class=\"jumbotron\">School Management</h2>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n        <div class=\"col-sm-4\">\r\n        </div>\r\n        <div class=\"col-sm-3\">\r\n            <div class=\"form-group\">\r\n                <select class=\"form-control\" [(ngModel)]=\"model.selectedCity\">\r\n                    <option value=\"\">Select City</option>\r\n                    <option *ngFor=\"let city of allCityList\" [ngValue]=\"city.city_name\">{{city.city_name}}</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-2\">\r\n            <div class=\"form-group\">\r\n                <input type=\"text\" class=\"form-control\" [(ngModel)]=\"model.searchText\" placeholder=\"search\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-3\">\r\n            <div class=\"form-group\">\r\n                <button (click)=\"onSearch()\" [disabled]=\"!displaySchool\" class=\"btn btn-outline-primary btn-rounded waves-effect\"> Search</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"container-fluid\">\r\n    <div class=\"row content\">\r\n        <div class=\"col-sm-2\">\r\n            <div class=\"form-group\">\r\n                <select class=\"form-control\" [(ngModel)]=\"model.selectedSchoolType\" >\r\n                    <option value=\"\">Select School Type</option>\r\n                    <option *ngFor=\"let s of allSchoolTypeList\" [ngValue]=\"s.type\">{{s.type}}</option>\r\n                </select>\r\n            </div>\r\n            <div>\r\n                <br>\r\n                <br>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <select class=\"form-control\" [(ngModel)]=\"model.selectedProgram\" >\r\n                    <option value=\"\">Select Programs Offered</option>\r\n                    <option *ngFor=\"let p of allProgramList\" [ngValue]=\"p.program\">{{p.program}}</option>\r\n                </select>\r\n            </div>\r\n            <div>\r\n                <br>\r\n                <br>\r\n            </div>\r\n            <div class=\"btn-group\">\r\n                <button type=\"button\" (click)=\"onLeftSearch()\" [disabled]=\"!displaySchool\" class=\"btn btn-outline-primary btn-rounded waves-effect\">Filter/Refresh</button>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-8\" *ngIf=\"isSearch\">\r\n            <table class=\"table\">\r\n                <thead class=\"thead-light\">\r\n                    <tr>\r\n                        <th scope=\"col\">Image</th>\r\n                        <th scope=\"col\">School Name</th>\r\n                        <th scope=\"col\">Standard</th>\r\n                        <th scope=\"col\">Type</th>\r\n                        <th scope=\"col\">Program Offered</th>\r\n                        <th scope=\"col\">City</th>\r\n                        <th>Action</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n                    <tr *ngFor=\"let school of schoolList | paginate: { itemsPerPage: pageParItem, currentPage: pageNumbers, totalItems:totalItem ,id:'data'}\">\r\n                        <th>\r\n                            <img [src]='school.image' height=\"35px\" width=\"35px\">\r\n                        </th>\r\n                        <th>{{school.name}}</th>\r\n                        <td>{{school.standard}}</td>\r\n                        <td>{{school.type}}</td>\r\n                        <td>{{school.program_offered}}</td>\r\n                        <td>{{school.city}}</td>\r\n                        <td>\r\n                            <button class=\"btn btn-outline-primary btn-rounded waves-effect btn-sm\" (click)=\"onClick(school)\">Details</button>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            <!--Pagination-->\r\n            <div class=\"col-sm-12 \">\r\n                <div class=\"dataTables_paginate paging_simple_numbers \" id=\"DataTables_Table_0_paginate\">\r\n                    <pagination-controls class=\"dataTables_paginate paging_simple_numbers paginated\r\n                                                    \" (pageChange)=\"userPageChangeEvent($event)\" previousLabel=\"\" nextLabel=\"\"\r\n                        id=\"data\"></pagination-controls>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<app-navbar></app-navbar>\r\n<div class=\"container\">\r\n    <div class=\"text-center\">\r\n        <h2 class=\"jumbotron\">School Management</h2>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n        <div class=\"col-sm-4\">\r\n        </div>\r\n        <div class=\"col-sm-3\">\r\n            <div class=\"form-group\">\r\n                <select class=\"form-control\" [(ngModel)]=\"model.selectedCity\">\r\n                    <option value=\"\">Select City</option>\r\n                    <option *ngFor=\"let city of allCityList\" [ngValue]=\"city.city_name\">{{city.city_name}}</option>\r\n                </select>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-2\">\r\n            <div class=\"form-group\">\r\n                <input type=\"text\" class=\"form-control\" [(ngModel)]=\"model.searchText\" placeholder=\"search\">\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-3\">\r\n            <div class=\"form-group\">\r\n                <button (click)=\"onSearch()\" [disabled]=\"!displaySchool\" class=\"btn btn-outline-primary btn-rounded waves-effect\"> Search</button>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<div class=\"container-fluid\">\r\n    <div class=\"row content\">\r\n        <div class=\"col-sm-2\">\r\n            <div class=\"form-group\">\r\n                <select class=\"form-control\" [(ngModel)]=\"model.selectedSchoolType\" >\r\n                    <option value=\"\">Select School Type</option>\r\n                    <option *ngFor=\"let s of allSchoolTypeList\" [ngValue]=\"s.type\">{{s.type}}</option>\r\n                </select>\r\n            </div>\r\n            <div>\r\n                <br>\r\n                <br>\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <select class=\"form-control\" [(ngModel)]=\"model.selectedProgram\" >\r\n                    <option value=\"\">Select Programs Offered</option>\r\n                    <option *ngFor=\"let p of allProgramList\" [ngValue]=\"p.program\">{{p.program}}</option>\r\n                </select>\r\n            </div>\r\n            <div>\r\n                <br>\r\n                <br>\r\n            </div>\r\n            <div class=\"btn-group\">\r\n                <button type=\"button\" (click)=\"onLeftSearch()\" [disabled]=\"!displaySchool\" class=\"btn btn-outline-primary btn-rounded waves-effect\">Filter/Refresh</button>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-sm-8\" *ngIf=\"isSearch\">\r\n            <table class=\"table\">\r\n                <thead class=\"thead-light\">\r\n                    <tr>\r\n                        <th scope=\"col\">Image</th>\r\n                        <th scope=\"col\">School Name</th>\r\n                        <th scope=\"col\">Standard</th>\r\n                        <th scope=\"col\">Type</th>\r\n                        <th scope=\"col\">Program Offered</th>\r\n                        <th scope=\"col\">City</th>\r\n                        <th>Action</th>\r\n                    </tr>\r\n                </thead>\r\n                <tbody>\r\n                    <tr *ngFor=\"let school of schoolList | paginate: { itemsPerPage: pageParItem, currentPage: pageNumbers, totalItems:totalItem ,id:'data'}\">\r\n                        <th>\r\n                            <img [src]='school.image' height=\"35px\" width=\"35px\">\r\n                        </th>\r\n                        <th>{{school.name}}</th>\r\n                        <td>{{school.standard}}</td>\r\n                        <td>{{school.type}}</td>\r\n                        <td>{{school.program_offered}}</td>\r\n                        <td>{{school.city}}</td>\r\n                        <td>\r\n                            <button class=\"btn btn-outline-primary btn-rounded waves-effect btn-sm\" (click)=\"onClick(school)\">Details</button>\r\n                        </td>\r\n                    </tr>\r\n                </tbody>\r\n            </table>\r\n            <!--Pagination-->\r\n            <div class=\"col-sm-12 \">\r\n                <div class=\"dataTables_paginate paging_simple_numbers \" id=\"DataTables_Table_0_paginate\">\r\n                    <pagination-controls class=\"dataTables_paginate paging_simple_numbers paginated\r\n                                                    \" (pageChange)=\"userPageChangeEvent($event)\" previousLabel=\"\" nextLabel=\"\"\r\n                        id=\"data\"></pagination-controls>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n\r\n<app-footer></app-footer>"
 
 /***/ }),
 
